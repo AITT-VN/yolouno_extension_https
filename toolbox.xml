@@ -1,0 +1,88 @@
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+  <category id="http" name="HTTP" colour="#e65722" icon="wifi">
+    <block type="uno_http_connect_wifi">
+      <value name="WIFI">
+        <shadow type="text">
+          <field name="TEXT">wifi</field>
+        </shadow>
+      </value>
+      <value name="PASSWORD">
+        <shadow type="text">
+          <field name="TEXT">password</field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="uno_telegram_get_method">
+      <value name="TOKEN">
+        <shadow type="text">
+          <field name="TEXT"></field>
+        </shadow>
+      </value>
+      <value name="ID">
+        <shadow type="text">
+          <field name="TEXT"></field>
+        </shadow>
+      </value>
+      <value name="MESSEGE">
+        <shadow type="text">
+          <field name="TEXT"></field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="uno_http_get_request">
+      <value name="url">
+        <shadow type="text">
+          <field name="TEXT">https://jsonplaceholder.typicode.com/users</field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="uno_http_post_request">
+      <value name="url">
+        <shadow type="text">
+          <field name="TEXT">https://jsonplaceholder.typicode.com/users</field>
+        </shadow>
+      </value>
+      <value name="data">
+        <shadow type="text">
+          <field name="TEXT"></field>
+        </shadow>
+      </value>
+      <value name="header">
+        <shadow type="text">
+          <field name="TEXT"></field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="uno_http_get_status_code" />
+    <block type="uno_http_get_data_text" />
+    <block type="uno_http_is_ok" />
+
+    <block type="uno_json_index">
+      <value name="INPUT">
+        <shadow type="text">
+          <field name="TEXT">{"key":"value"}</field>
+        </shadow>
+      </value>
+
+      <value name="FIND">
+        <shadow type="text">
+          <field name="TEXT">key</field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="uno_json_object" />
+    <block type="uno_json_member">
+      <value name="MEMBER_VALUE">
+        <shadow type="text">
+          <field name="TEXT"></field>
+        </shadow>
+      </value>
+    </block>
+
+  </category>
+</xml>
